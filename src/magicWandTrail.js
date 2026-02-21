@@ -6,7 +6,7 @@
  * @property {number} [fadeSpeed] - How fast particles vanish
  * @property {boolean} [respectMotionPrefs] - Wheter should respect prefers-reduced-motion user system preferences
  */
-export default class MagicWandTrail {
+export class MagicWandTrail {
   /** @type {Particle[]} */
   #particles = [];
   /** @type {HTMLCanvasElement} */

@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { Particle } from "./magicWandTrail";
+import { Particle } from "../src/magicWandTrail";
 
 describe("Particle Class", () => {
   beforeEach(() => {
