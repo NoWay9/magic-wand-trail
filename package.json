@@ -6,7 +6,9 @@
   "source": "src/magicWandTrail.js",
   "main": "./dist/magicWandTrail.umd.js",
   "module": "./dist/magicWandTrail.es.js",
+  "types": "./src/magicWandTrail.d.ts",
   "exports": {
+    "types": "./src/magicWandTrail.d.ts",
     "require": "./dist/magicWandTrail.umd.js",
     "import": "./dist/magicWandTrail.es.js"
   },

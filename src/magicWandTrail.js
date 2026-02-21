@@ -227,3 +227,11 @@ export class Particle {
     this.opacity -= this.fadeSpeed;
   }
 }
+
+export function magicWandTrail(options = {}) {
+  const instance = new MagicWandTrail(options);
+
+  return {
+    destroy: () => instance.destroy(),
+  };
+}
