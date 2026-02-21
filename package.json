@@ -1,0 +1,46 @@
+{
+  "name": "magic-wand-trail",
+  "version": "1.0.0",
+  "description": "A lightweight emoji particle trail library.",
+  "type": "module",
+  "source": "src/magicWandTrail.js",
+  "main": "./dist/magicWandTrail.umd.js",
+  "module": "./dist/magicWandTrail.es.js",
+  "exports": {
+    "require": "./dist/magicWandTrail.umd.js",
+    "import": "./dist/magicWandTrail.es.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src/**/*.js",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "keywords": [
+    "canvas",
+    "particles",
+    "emoji",
+    "cursor-trail",
+    "animation",
+    "frontend"
+  ],
+  "author": "Liubomyr Struk",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitest/eslint-plugin": "^1.6.9",
+    "eslint": "^10.0.1",
+    "globals": "^17.3.0",
+    "jsdom": "^28.1.0",
+    "terser": "^5.46.0",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
+  }
+}

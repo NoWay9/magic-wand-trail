@@ -1,0 +1,150 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Wand Trail</title>
+    <style>
+      body {
+        margin: 0;
+        /* overflow: hidden; */
+        /* background-color: #050505;
+        cursor: none;  */
+      }
+      /* canvas {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9999; 
+        background: transparent !important;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>My app</h1>
+    <section>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima eaque
+        amet architecto tempora, animi ea blanditiis ab maxime earum
+        necessitatibus obcaecati temporibus, incidunt, quia nemo delectus ipsum
+        fuga magni rerum. Laudantium quisquam ut asperiores obcaecati
+        necessitatibus placeat quidem provident illo, dolores dolor illum,
+        possimus saepe? Labore voluptatum, veniam omnis, quidem fugit, ipsum in
+        reprehenderit debitis cum aut vero assumenda. Sit! Beatae hic vitae modi
+        molestiae asperiores dolor earum corporis soluta quod deleniti!
+        Consectetur inventore tempora, commodi repellendus quis porro esse illo
+        explicabo ratione amet et voluptatibus molestiae eaque itaque corporis.
+        Quo rerum impedit ipsum at! Quod, expedita. Vitae, in, cumque sint iusto
+        perferendis, alias modi animi amet pariatur eveniet rerum. Molestiae
+        neque quidem exercitationem porro voluptate blanditiis at ducimus
+        perferendis! A nobis iusto unde soluta voluptatem earum possimus facere
+        ipsum sint veritatis, blanditiis dolores expedita? Inventore odio
+        laborum at eligendi, quod et cumque maxime, deserunt totam, laudantium
+        voluptatibus? Saepe, est. Ipsa officia culpa, eius ut dolore nobis!
+        Cupiditate voluptate enim, corporis aut odio ex, nisi culpa laborum
+        nihil sapiente molestias deserunt veniam ducimus asperiores similique
+        natus dolores esse itaque tempore. Nemo, alias, perferendis suscipit
+        nesciunt magni officiis totam est sequi, quia cumque blanditiis in?
+        Porro ut, natus itaque tempora veritatis at quod blanditiis eveniet
+        illum quae aut inventore mollitia non. Quis deleniti maxime rem eveniet.
+        Fugit magni error consectetur sequi omnis debitis, nulla quis, accusamus
+        odio facilis molestias alias quaerat dicta! Esse consequatur sequi nihil
+        ullam porro illum corporis eos! Reiciendis odio, iste provident qui sit
+        autem facere quod voluptatibus nihil adipisci neque. Molestias ab fuga
+        id, repudiandae quis neque. Qui alias minima dicta veniam dolore nulla
+        blanditiis deleniti sed. Vel ratione molestias consequatur perferendis
+        eius ad nisi. Recusandae laudantium maiores fugiat numquam deleniti
+        vero, expedita nulla impedit consequuntur dolorum voluptatum consequatur
+        velit non sapiente tempore obcaecati nobis pariatur neque.
+      </div>
+      <button onclick="alert('CALLED')">Click me</button>
+    </section>
+    <canvas id="myCanvas"></canvas>
+    <script type="module">
+      import MagicWand from "./src/magicWand.js";
+      window.addEventListener("load", () => {
+        const myWand = new MagicWand("myCanvas", {
+          color: "multi",
+          density: 5,
+          fadeSpeed: 0.08,
+        });
+        const wizardWand = new MagicWand("myCanvas", {
+          emoji: ["⚡", "🔥", "❄️", "✨"],
+          density: 3,
+          speed: 2,
+        });
+      });
+    </script>
+  </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Wand Test</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        height: 200vh; /* Make page scrollable */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+      }
+      .content {
+        max-width: 600px;
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background: #667eea;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: transform 0.2s;
+      }
+      button:hover {
+        transform: scale(1.1);
+        background: #764ba2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Magic Wand Trail Test ✨</h1>
+      <p>Move your mouse around to see the emoji trail!</p>
+      <p>
+        Try to click this button. If it works, the canvas isn't blocking the
+        page.
+      </p>
+      <button onclick="alert('Button Clicked!')">Click Me!</button>
+    </div>
+
+    <script type="module">
+      import MagicWandTrail from "./src/magicWandTrail.js";
+
+      const wand = new MagicWandTrail({
+        emoji: ["🌜", "❄️", "🎃"],
+        density: 1,
+      });
+      //   const wizardWand = new MagicWandTrail({
+      //     emoji: ["⚡", "🔥", "❄️", "✨"],
+      //     density: 3,
+      //     speed: 2,
+      //   });
+    </script>
+  </body>
+</html>
