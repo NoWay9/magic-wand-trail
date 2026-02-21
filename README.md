@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/magic-wand-trail?color=cb3837&logo=npm)](https://www.npmjs.com/package/magic-wand-trail)
+
 # Magic Wand Trail ✨
 
 A lightweight, modern JavaScript library for creating interactive emoji particle trail that follow mouse or touch movement. Perfect for landing pages, "spell-cast" buttons, or interactive drawing tools.
