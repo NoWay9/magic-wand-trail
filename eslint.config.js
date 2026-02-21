@@ -1,9 +1,10 @@
 import js from "@eslint/js";
 import globals from "globals";
+import vitest from "@vitest/eslint-plugin";
 
 export default [
   {
-    ignores: ["dist/*", "node_modules/*", "vite.config.js"],
+    ignores: ["dist/*", "dist-demo/*", "node_modules/*", "vite.config.js"],
   },
   js.configs.recommended,
   {
