@@ -39,7 +39,7 @@ const wand = new MagicWandTrail({
 
 ### `wand.destroy()`
 
-Stops the animation and clears all particles,
+Stops the animation and clears all particles.
 
 ```javascript
 const wand = magicWandTrail({ emoji: ["🌜", "❄️", "🎃"] });
