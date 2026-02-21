@@ -32,6 +32,14 @@
     "frontend"
   ],
   "author": "Liubomyr Struk",
+  "homepage": "https://github.com/NoWay9/magic-wand-trail#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoWay9/magic-wand-trail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NoWay9/magic-wand-trail/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
