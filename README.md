@@ -2,7 +2,6 @@
 
 A lightweight, modern JavaScript library for creating interactive emoji particle trail that follow mouse or touch movement. Perfect for landing pages, "spell-cast" buttons, or interactive drawing tools.
 
-
 ![magic-wand-trail-demo](https://github.com/user-attachments/assets/3155262b-19be-495b-831c-39e33bccfe88)
 
 ## Installation
@@ -16,7 +15,7 @@ npm install magic-wand-trail
 Initialize the magic in your JS:
 
 ```bash
-import MagicWandTrail from 'magic-wand-trail';
+import { MagicWandTrail } from 'magic-wand-trail';
 
 const wand = new MagicWandTrail({
         emoji: ["🌜", "❄️", "🎃"],
